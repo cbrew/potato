@@ -114,7 +114,8 @@ template_dict = {
         'default': os.path.join(cur_program_dir, 'base_html/examples/plain_layout.html'),
         'plain': os.path.join(cur_program_dir, 'base_html/examples/plain_layout.html'),
         'kwargs': os.path.join(cur_program_dir, 'base_html/examples/kwargs_example.html'),
-        'fixed_keybinding': os.path.join(cur_program_dir, 'base_html/examples/fixed_keybinding_layout.html')
+        'fixed_keybinding': os.path.join(cur_program_dir, 'base_html/examples/fixed_keybinding_layout.html'),
+        'lexis': os.path.join(cur_program_dir, 'base_html/examples/lexis_layout.html'),
     }
 }
 
