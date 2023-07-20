@@ -2,7 +2,7 @@
   <div class="col-md-12">
 
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-12">
         <div name="context_text" class="instance">
           <div name="instance_text">
             {{instance | safe}}
@@ -11,14 +11,7 @@
       </div>
     </div>
 
-    <div>
-            <details>
-            <summary>{{casename}}</summary>
-            <pre>
-              {{fulltext | safe}}
-            </pre>
-          </details>
-    </div>
+
 
     <div style="height: 15px;" />
     
@@ -28,4 +21,18 @@
       {{annotation_schematic}}
     </div>
   </div>
+
+  <div class="row">
+       <div class-col-md-12>
+           <div name="fulltext" class = "instance">
+        <h3>Full text</h3>
+            <details>
+            <summary>{{casename}}</summary>
+            <pre>
+              {{fulltext | safe}}
+            </pre>
+          </details>
+    </div>
+      </div>
+      </div>
 </div>

@@ -253,7 +253,7 @@
 
     <div id="mySidepanel" class="sidepanel">
       <a href="javascript:void(0)" class="closebtn" target_id="mySidepanel" onclick="closeNav(this.getAttribute('target_id'))">&times;</a>
-      <table><tr><th>Key</th><th>Description</th></tr><tr><td style="text-align: center;">&#8592;</td><td>Move backward</td></tr><tr><td style="text-align: center;">&#8594;</td><td>Move forward</td></tr><tr><td style="text-align: center;">1</td><td>relevance: 1</td></tr><tr><td style="text-align: center;">2</td><td>relevance: 2</td></tr><tr><td style="text-align: center;">3</td><td>relevance: 3</td></tr><tr><td style="text-align: center;">4</td><td>relevance: 4</td></tr><tr><td style="text-align: center;">5</td><td>relevance: 5</td></tr><tr><td style="text-align: center;">1</td><td>fluency: 1</td></tr><tr><td style="text-align: center;">2</td><td>fluency: 2</td></tr><tr><td style="text-align: center;">3</td><td>fluency: 3</td></tr><tr><td style="text-align: center;">4</td><td>fluency: 4</td></tr><tr><td style="text-align: center;">5</td><td>fluency: 5</td></tr><tr><td style="text-align: center;">1</td><td>coherence: 1</td></tr><tr><td style="text-align: center;">2</td><td>coherence: 2</td></tr><tr><td style="text-align: center;">3</td><td>coherence: 3</td></tr><tr><td style="text-align: center;">4</td><td>coherence: 4</td></tr><tr><td style="text-align: center;">5</td><td>coherence: 5</td></tr><tr><td style="text-align: center;">1</td><td>consistency: consistent</td></tr><tr><td style="text-align: center;">2</td><td>consistency: not consistent</td></tr></table>
+      <table><tr><th>Key</th><th>Description</th></tr><tr><td style="text-align: center;">&#8592;</td><td>Move backward</td></tr><tr><td style="text-align: center;">&#8594;</td><td>Move forward</td></tr></table>
     </div>
 
     <div id="Statpanel" class="sidepanel">
@@ -776,7 +776,7 @@
   <div class="col-md-12">
 
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-12">
         <div name="context_text" class="instance">
           <div name="instance_text">
             {{instance | safe}}
@@ -785,27 +785,33 @@
       </div>
     </div>
 
-    
+
+
     <div style="height: 15px;" />
     
   </div>
   <div class="col-md-12">
     <div class="annotation_schema">
-      <div><form action="/action_page.php">  <fieldset> <legend>Relevance</legend> <ul class="likert" style="text-align: center;"> <li> Not Relevant </li> <li><input class="relevance" type="radio" id="relevance:::scale_1" name="relevance:::scale_1" value="1" onclick="onlyOne(this)" validation="required"> <br> <label for="relevance:::scale_1" > 1</label></li> <li><input class="relevance" type="radio" id="relevance:::scale_2" name="relevance:::scale_2" value="2" onclick="onlyOne(this)" validation="required"> <br> <label for="relevance:::scale_2" > 2</label></li> <li><input class="relevance" type="radio" id="relevance:::scale_3" name="relevance:::scale_3" value="3" onclick="onlyOne(this)" validation="required"> <br> <label for="relevance:::scale_3" > 3</label></li> <li><input class="relevance" type="radio" id="relevance:::scale_4" name="relevance:::scale_4" value="4" onclick="onlyOne(this)" validation="required"> <br> <label for="relevance:::scale_4" > 4</label></li> <li><input class="relevance" type="radio" id="relevance:::scale_5" name="relevance:::scale_5" value="5" onclick="onlyOne(this)" validation="required"> <br> <label for="relevance:::scale_5" > 5</label></li>  <li>Super Relevant</li>  </ul></fieldset>
-</form></div>
-
-<div><form action="/action_page.php">  <fieldset> <legend>Fluency</legend> <ul class="likert" style="text-align: center;"> <li> Not fluent </li> <li><input class="fluency" type="radio" id="fluency:::scale_1" name="fluency:::scale_1" value="1" onclick="onlyOne(this)" validation="required"> <br> <label for="fluency:::scale_1" > 1</label></li> <li><input class="fluency" type="radio" id="fluency:::scale_2" name="fluency:::scale_2" value="2" onclick="onlyOne(this)" validation="required"> <br> <label for="fluency:::scale_2" > 2</label></li> <li><input class="fluency" type="radio" id="fluency:::scale_3" name="fluency:::scale_3" value="3" onclick="onlyOne(this)" validation="required"> <br> <label for="fluency:::scale_3" > 3</label></li> <li><input class="fluency" type="radio" id="fluency:::scale_4" name="fluency:::scale_4" value="4" onclick="onlyOne(this)" validation="required"> <br> <label for="fluency:::scale_4" > 4</label></li> <li><input class="fluency" type="radio" id="fluency:::scale_5" name="fluency:::scale_5" value="5" onclick="onlyOne(this)" validation="required"> <br> <label for="fluency:::scale_5" > 5</label></li>  <li>Super fluent</li>  </ul></fieldset>
-</form></div>
-
-<div><form action="/action_page.php">  <fieldset> <legend>Coherence</legend> <ul class="likert" style="text-align: center;"> <li> Not Coherent </li> <li><input class="coherence" type="radio" id="coherence:::scale_1" name="coherence:::scale_1" value="1" onclick="onlyOne(this)" validation="required"> <br> <label for="coherence:::scale_1" > 1</label></li> <li><input class="coherence" type="radio" id="coherence:::scale_2" name="coherence:::scale_2" value="2" onclick="onlyOne(this)" validation="required"> <br> <label for="coherence:::scale_2" > 2</label></li> <li><input class="coherence" type="radio" id="coherence:::scale_3" name="coherence:::scale_3" value="3" onclick="onlyOne(this)" validation="required"> <br> <label for="coherence:::scale_3" > 3</label></li> <li><input class="coherence" type="radio" id="coherence:::scale_4" name="coherence:::scale_4" value="4" onclick="onlyOne(this)" validation="required"> <br> <label for="coherence:::scale_4" > 4</label></li> <li><input class="coherence" type="radio" id="coherence:::scale_5" name="coherence:::scale_5" value="5" onclick="onlyOne(this)" validation="required"> <br> <label for="coherence:::scale_5" > 5</label></li>  <li>Super Coherent</li>  </ul></fieldset>
-</form></div>
-
-<form action="/action_page.php">  <fieldset>  <legend>Factual consistency</legend>      <input class="consistency" type="radio" id="consistency:::consistent" name="consistency:::consistent" value="1" onclick="onlyOne(this)" validation="required">  <label for="consistency:::consistent" >consistent</label>      <input class="consistency" type="radio" id="consistency:::not consistent" name="consistency:::not consistent" value="2" onclick="onlyOne(this)" validation="required">  <label for="consistency:::not consistent" >not consistent</label>  </fieldset>
+      <form action="/action_page.php">  <fieldset>  <legend>Case law summary quality score</legend>      <input class="summary_score" type="radio" id="summary_score:::3 " name="summary_score:::3 " value="summary_score:::3 " onclick="onlyOne(this)" validation="">  <label for="summary_score:::3 " data-toggle="tooltip" data-html="true" data-placement="top" title="Accurately states holdings and key facts. Contains all required structural elements. Outcome element is required. Grammatically correct, appropriate tone and style. No hallucinations.">3 </label><br/>      <input class="summary_score" type="radio" id="summary_score:::2 " name="summary_score:::2 " value="summary_score:::2 " onclick="onlyOne(this)" validation="">  <label for="summary_score:::2 " data-toggle="tooltip" data-html="true" data-placement="top" title="Misses slightly on some of the above criteria, e.g., could be missing a factual element, or 1-2 of the structural elements, but still represents the summarized document well and would not mislead the reader. May miss court rationale, for example, but is accurate. May miss on some style elements, but still readable and grammatically correct. No hallucinations. Outcome element required.  ">2 </label><br/>      <input class="summary_score" type="radio" id="summary_score:::1 " name="summary_score:::1 " value="summary_score:::1 " onclick="onlyOne(this)" validation="">  <label for="summary_score:::1 " data-toggle="tooltip" data-html="true" data-placement="top" title="Misses more than half of the structural elements. Could be lacking a holding or key facts. No overt hallucinations, but may not fully represent key aspects of the case, e.g., includes dicta, or has some style or grammar issues. Outcome element required ">1 </label><br/>      <input class="summary_score" type="radio" id="summary_score:::0 " name="summary_score:::0 " value="summary_score:::0 " onclick="onlyOne(this)" validation="">  <label for="summary_score:::0 " data-toggle="tooltip" data-html="true" data-placement="top" title="Automatic zero for lack of outcome element or hallucinations. May also get a zero for missing key points of the case to the point that it would likely mislead the user, or major style or grammar issues that would hurt our brand or customer trust.  ">0 </label><br/><br/> This is the deep dive version of case law. Enter free text comments (if any) below <input class="summary_score" type="text" id="summary_score:::free_response" name="summary_score:::free_response" >  <label for="summary_score:::free_response" Entire a label not listed here></label><br/>  </fieldset>
 </form>
 
 
     </div>
   </div>
+
+  <div class="row">
+       <div class-col-md-12>
+           <div name="fulltext" class = "instance">
+        <h3>Full text</h3>
+            <details>
+            <summary>{{casename}}</summary>
+            <pre>
+              {{fulltext | safe}}
+            </pre>
+          </details>
+    </div>
+      </div>
+      </div>
 </div>
 
 
